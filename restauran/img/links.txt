@@ -1,0 +1,6 @@
+Mesa 1: http://192.168.18.108/restauran/menu.php?mesa=1
+Mesa 2: http://192.168.18.108/restauran/menu.php?mesa=2
+Mesa 3: http://192.168.18.108/restauran/menu.php?mesa=3
+Mesa 4: http://192.168.18.108/restauran/menu.php?mesa=4
+Mesa 5: http://192.168.18.108/restauran/menu.php?mesa=5
+Mesa 6: http://192.168.18.108/restauran/menu.php?mesa=6

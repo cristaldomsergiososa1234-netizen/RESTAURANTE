@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR de Mesas - Restauran</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff7ed;
+      color: #2b1d12;
+      padding: 30px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 38px;
+      color: #7c2d12;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #7c5b42;
+      font-size: 17px;
+    }
+
+    .grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 22px;
+      padding: 22px;
+      text-align: center;
+      box-shadow: 0 12px 30px rgba(124, 45, 18, 0.15);
+      border: 2px solid #fed7aa;
+    }
+
+    .card h2 {
+      color: #9a3412;
+      margin-bottom: 14px;
+      font-size: 26px;
+    }
+
+    .card img {
+      width: 220px;
+      max-width: 100%;
+      background: white;
+      padding: 10px;
+      border-radius: 16px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #6b4f3b;
+      word-break: break-all;
+      margin-bottom: 14px;
+    }
+
+    .card a {
+      display: inline-block;
+      background: #ea580c;
+      color: white;
+      padding: 11px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      background: #c2410c;
+    }
+
+    @media print {
+      .card a {
+        display: none;
+      }
+
+      body {
+        background: white;
+      }
+
+      .card {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 16px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📱 QR de Mesas</h1>
+    <p>Escanea el QR de cada mesa para abrir su menú correspondiente.</p>
+  </header>
+
+  <main class="grid">
+    
+      <article class="card">
+        <h2>Mesa 1</h2>
+        <img src="img/mesa_1.png" alt="QR Mesa 1">
+        <p>http://192.168.18.108/restauran/menu.php?mesa=1</p>
+        <a href="http://192.168.18.108/restauran/menu.php?mesa=1" target="_blank">Abrir menú</a>
+      </article>
+    
+      <article class="card">
+        <h2>Mesa 2</h2>
+        <img src="img/mesa_2.png" alt="QR Mesa 2">
+        <p>http://192.168.18.108/restauran/menu.php?mesa=2</p>
+        <a href="http://192.168.18.108/restauran/menu.php?mesa=2" target="_blank">Abrir menú</a>
+      </article>
+    
+      <article class="card">
+        <h2>Mesa 3</h2>
+        <img src="img/mesa_3.png" alt="QR Mesa 3">
+        <p>http://192.168.18.108/restauran/menu.php?mesa=3</p>
+        <a href="http://192.168.18.108/restauran/menu.php?mesa=3" target="_blank">Abrir menú</a>
+      </article>
+    
+      <article class="card">
+        <h2>Mesa 4</h2>
+        <img src="img/mesa_4.png" alt="QR Mesa 4">
+        <p>http://192.168.18.108/restauran/menu.php?mesa=4</p>
+        <a href="http://192.168.18.108/restauran/menu.php?mesa=4" target="_blank">Abrir menú</a>
+      </article>
+    
+      <article class="card">
+        <h2>Mesa 5</h2>
+        <img src="img/mesa_5.png" alt="QR Mesa 5">
+        <p>http://192.168.18.108/restauran/menu.php?mesa=5</p>
+        <a href="http://192.168.18.108/restauran/menu.php?mesa=5" target="_blank">Abrir menú</a>
+      </article>
+    
+      <article class="card">
+        <h2>Mesa 6</h2>
+        <img src="img/mesa_6.png" alt="QR Mesa 6">
+        <p>http://192.168.18.108/restauran/menu.php?mesa=6</p>
+        <a href="http://192.168.18.108/restauran/menu.php?mesa=6" target="_blank">Abrir menú</a>
+      </article>
+    
+  </main>
+</body>
+</html>

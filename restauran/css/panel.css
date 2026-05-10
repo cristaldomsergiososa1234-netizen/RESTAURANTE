@@ -1,0 +1,23 @@
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
+body{background:#f1f5f9;color:#0f172a}
+header{background:#0f172a;color:white;padding:24px;text-align:center}
+header h1{font-size:34px;margin-bottom:8px}
+main{max-width:1200px;margin:auto;padding:24px}
+.pedidos-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.pedido{background:white;border-radius:20px;padding:20px;box-shadow:0 10px 25px rgba(15,23,42,.12);border-left:8px solid #f97316}
+.pedido-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+.pedido h2{font-size:24px}.pedido p{margin-bottom:8px}.pedido h3{margin-top:15px;margin-bottom:8px}
+.estado{padding:7px 12px;border-radius:999px;color:white;font-weight:bold;text-transform:uppercase;font-size:12px}
+.pendiente{background:#ef4444}.preparando{background:#f97316}.servido{background:#16a34a}
+ul{padding-left:20px;margin-bottom:16px}li{margin-bottom:8px}
+.acciones{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.acciones button{border:none;padding:11px;border-radius:12px;font-weight:bold;color:white;cursor:pointer;background:#334155}
+.acciones button[value='preparando']{background:#f97316}.acciones button[value='servido']{background:#16a34a}.acciones button[value='pagado']{background:#2563eb}
+.vacio{background:white;padding:30px;border-radius:20px;text-align:center;font-weight:bold;color:#64748b}
+@media(max-width:800px){.pedidos-grid{grid-template-columns:1fr}.acciones{grid-template-columns:1fr}}
+.hora-pedido{
+    margin-top:6px;
+    color:#64748b;
+    font-size:14px;
+    font-weight:bold;
+}
